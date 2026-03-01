@@ -1,45 +1,58 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Здоровье</title>
-<style>
-body{font-family:system-ui,Arial,sans-serif;background:#0b1220;margin:0;color:#fff}
-.container{max-width:960px;margin:auto;padding:20px}
-.hero{display:flex;justify-content:center;margin-top:40px}
-.hero svg{width:160px;height:160px}
-h1{text-align:center;font-size:40px;margin:20px 0 10px}
-p{color:#ccc;text-align:center;margin:0 0 20px}
-.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px;margin:16px 0}
-h2{margin:0 0 8px}
-footer{text-align:center;color:#888;margin:40px 0 20px}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Здоровье</title>
+  <style>
+    body{font-family:system-ui,Arial,sans-serif;background:#0b1220;margin:0;color:#fff;}
+    .container{max-width:960px;margin:auto;padding:20px;}
+    .hero{display:flex;justify-content:center;margin-top:40px;}
+    .hero svg{width:160px;height:160px;}
+    h1{text-align:center;font-size:40px;margin:20px 0 10px;}
+    p{color:#ccc;text-align:center;margin:0 0 20px;}
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;margin:0 0 12px;}
+    h2{margin:0 0 8px;}
+    footer{text-align:center;color:#888;margin:40px 0 20px;}
+    a{color:#ccc;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+  </style>
 </head>
 <body>
-<div class="container">
-<div class="hero">
-<svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка здоровья">
-<defs>
-<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#34d399"/>
-<stop offset="1" stop-color="#60a5fa"/>
-</linearGradient>
-</defs>
-<rect x="0" y="0" width="160" height="160" rx="32" fill="url(#g)" opacity=".15"/>
-<path d="M80 120s-44-25-44-56c0-17 13-28 28-28 11 0 17 6 16 6s5-6 16-6c15 0 28 11 28 28 0 31-44 56-44 56z" fill="#34d399"/>
-<path d="M42 72h20l10 26 16-50 12 42h18" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
+  <div class="container">
+    <div class="hero">
+      <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка здоровья">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#34d399"/>
+            <stop offset="1" stop-color="#60a5fa"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="160" height="160" rx="32" fill="url(#g)" opacity=".15"/>
+        <path d="M80 120s-44-25-44-56c0-17 13-28 28-28 11 0 17 6 16 6s5-6 16-6c15 0 28 11 28 28 0 31-44 56-44 56z" fill="url(#g)"/>
+        <path d="M42 72h20l10 26 16-50 12 42h18" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
 
-<h1>Здоровье на каждый день</h1>
-<p>Питание • Движение • Сон</p>
+    <h1>Здоровье</h1>
+    <p>Питание • Движение • <a href="./sleep.html">Сон</a></p>
 
-<div class="card"><h2>Питание</h2><p>Овощи, цельные продукты, меньше сахара.</p></div>
-<div class="card"><h2>Движение</h2><p>30 минут активности в день для энергии и настроения.</p></div>
-<div class="card"><h2>Сон</h2><p>Режим сна — база. Без него тяжело держать полезные привычки.</p></div>
+    <div class="card">
+      <h2>Питание</h2>
+      <p>Питание — основа энергии и здоровья: выбирайте разнообразную еду, больше овощей и фруктов, меньше ультра‑переработанных продуктов.</p>
+    </div>
 
-<footer>© 2026. Информация не заменяет консультацию врача.</footer>
-</div>
+    <div class="card">
+      <h2>Движение</h2>
+      <p>Регулярные нагрузки улучшают настроение, укрепляют сердце и помогают справляться со стрессом.</p>
+    </div>
+
+    <div class="card">
+      <h2><a href="./sleep.html" style="color:#fff;">Сон</a></h2>
+      <p>Сон восстанавливает организм, помогает памяти и снижает уровень стресса.</p>
+    </div>
+
+    <footer>© 2026</footer>
+  </div>
 </body>
 </html>
